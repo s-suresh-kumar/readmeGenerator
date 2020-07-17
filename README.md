@@ -1,6 +1,6 @@
 
 
-# 1 
+# title 
 
 
 
@@ -23,15 +23,15 @@
 
 ## Description
 
-2
+Description
 
 ## Installation
 
-3
+Clone the repository. Under repository root issue "npm -i". The app should run fine.
 
 ## Instructions
 
-4
+Refer to User Instruction Maual attached as pdf
 
 ## License 
 
@@ -43,14 +43,14 @@ Please use my e-mail to contact me on how to contribute to this project.
 
 ## Tests
 
-t
+You can find examples here
 
 ## Questions
 
-s-suresh-kumar
+https://github.com/s-suresh-kumar
 
 
-suresh01@yahoo.com
+suresh.uncbc.coding@gmail.com
 
 
 

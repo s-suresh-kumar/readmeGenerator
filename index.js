@@ -192,7 +192,7 @@ ${tests}
 
 ## Questions
 
-${gitHubUserName}
+https://github.com/${gitHubUserName}
 \n
 ${email}
 
