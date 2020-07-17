@@ -1,115 +1,111 @@
 const inquirer = require("inquirer");
 //const axios = require("axios");
-const fs = require('fs');
-const path = require('path');
+const fs = require("fs");
+const path = require("path");
 
 // array of questions for user
 const questions = [
-    //     title of your project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
-    {
-        type: "input",
-        message: "What is your Project Title?",
-        name: "projectTitle"
-    },
+  //     title of your project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
+  {
+    type: "input",
+    message: "What is your Project Title?",
+    name: "projectTitle",
+  },
 
-    {
-        type: "input",
-        message: "Provide detail description",
-        name: "projectDescription"
-    },
+  {
+    type: "input",
+    message: "Provide detail description",
+    name: "projectDescription",
+  },
 
-    {
-        type: "input",
-        message: "What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.",
-        name: "installationInstruction"
+  {
+    type: "input",
+    message:
+      "What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.",
+    name: "installationInstruction",
+  },
+  {
+    type: "input",
+    message: "Provide instructions for use.",
+    name: "usageInstruction",
+  },
+  {
+    type: "list",
+    name: "license",
+    message: "Select a License ",
+    choices: ["MIT", "Apache 2.0", "BSD", "GPLv3", "ISC"],
+  },
+  {
+    type: "input",
+    message: "Provide guidelines on how to contribute to this project.",
+    name: "contributingInstruction",
+  },
+  {
+    type: "input",
+    message: "Provide examples on how to run tests.",
+    name: "tests",
+  },
 
-    },
-    {
-        type: "input",
-        message: "Provide instructions for use.",
-        name: "usageInstruction"
-    },
-    {
-        type: 'list-input',
-        name: 'license',
-        message: 'Select a License ',
-        choices: ['MIT',
-            'Apache 2.0',
-            'BSD',
-            'GPLv3',
-            'ISC'
-        ]
-    },
-    {
-        type: "input",
-        message: "Provide guidelines on how to contribute to this project.",
-        name: "contributingInstruction"
-    },
-    {
-        type: "input",
-        message: "Provide examples on how to run tests.",
-        name: "tests"
-    },
-
-    // {
-    //     type: "input",
-    //     message: "Questions?",
-    //     name: "questions"
-    // },
-    {
-        type: "input",
-        message: "What is your GitHub user name?",
-        name: "gitHubUsername"
-    },
-    {
-        type: "input",
-        message: "What is your E-mail?",
-        name: "email"
-    },
-
+  // {
+  //     type: "input",
+  //     message: "Questions?",
+  //     name: "questions"
+  // },
+  {
+    type: "input",
+    message: "What is your GitHub user name?",
+    name: "gitHubUsername",
+  },
+  {
+    type: "input",
+    message: "What is your E-mail?",
+    name: "email",
+  },
 ];
 
 // function to write README file
 function writeToFile(fileName, data) {
-    var writeResult = fs.writeFileSync(path.join(__dirname, '../ReadMeGenerator', fileName), data);
+  var writeResult = fs.writeFileSync(
+    path.join(__dirname, "../ReadMeGenerator", fileName),
+    data
+  );
 
-    console.log("file generated....")
+  console.log("file generated....");
 }
 
 // function to initialize program
 function init() {
-    console.log(`Begin`);
-    const userResponse = inquirer
-        .prompt(questions).then(function(userResponse) {
+  console.log(`Begin`);
+  const userResponse = inquirer.prompt(questions).then(function (userResponse) {
+    console.log(`starting`);
+    console.log(userResponse);
+    const gitUsername = userResponse.gitHubUsername;
+    const projectTitle = userResponse.projectTitle;
+    const projectDescription = userResponse.projectDescription;
 
-            console.log(`starting`);
-            console.log(userResponse);
-            const gitUsername = userResponse.gitHubUsername;
-            const projectTitle = userResponse.projectTitle;
-            const projectDescription = userResponse.projectDescription;
+    const installationProcess = userResponse.installationInstruction;
 
-            const installationProcess = userResponse.installationInstruction;
+    const instruction = userResponse.usageInstruction;
 
-            const instruction = userResponse.usageInstruction;
+    // const instructionExample = userResponse.instructionExample;
 
-            // const instructionExample = userResponse.instructionExample;
+    const licenseName = userResponse.license;
 
-            const licenseName = userResponse.license;
+    // const licenseUrl = userResponse.licenseUrl;
 
-            // const licenseUrl = userResponse.licenseUrl;
+    const Contributing =
+      "Please use my e-mail to contact me on how to contribute to this project.";
 
-            const Contributing = "Please use my e-mail to contact me on how to contribute to this project.";
+    const tests = userResponse.tests;
 
-            const tests = userResponse.tests;
+    const gitHubUserName = userResponse.gitHubUsername;
 
-            const gitHubUserName = userResponse.gitHubUsername;
+    const email = userResponse.email;
 
-            const email = userResponse.email;
+    // // fetching data from git
 
-            // // fetching data from git
-
-            // user
-            /*
+    // user
+    /*
                         const gitResponse = await axios.get(`https://api.github.com/users/${gitUsername}`);
 
                         const gitData = gitResponse.data;
@@ -124,8 +120,8 @@ function init() {
 
                         const gitProfileImage = gitData.avatar_url;
             */
-            // contributor
-            /*
+    // contributor
+    /*
                 const contributorUserNamesArray = contributorUserNames.split(",");
 
                 console.log(contributorUserNamesArray);
@@ -154,7 +150,7 @@ function init() {
 
                 }
             */
-            var result = (`
+    var result = `
 
 # ${projectTitle} 
 
@@ -202,11 +198,10 @@ ${email}
 
 
 
-`)
-            writeToFile('README.md', result);
-        });
+`;
+    writeToFile("README.md", result);
+  });
 }
-
 
 // function call to initialize program
 init();
