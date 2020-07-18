@@ -36,7 +36,7 @@ t
 
 ## License 
 
-This project is licensed under the ![License: MIT](https://opensource.org/licenses/MIT)  
+This project is licensed under the [ MIT](https://opensource.org/licenses/MIT) License. 
 
 ## Contribute
 
