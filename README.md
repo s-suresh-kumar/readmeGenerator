@@ -1,6 +1,7 @@
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 
-# title 
+# t 
 
 
 
@@ -23,15 +24,15 @@
 
 ## Description
 
-Description
+d
 
 ## Installation
 
-Clone the repository. Under repository root issue "npm -i". The app should run fine.
+r
 
 ## Instructions
 
-Refer to User Instruction Maual attached as pdf
+u
 
 ## License 
 
@@ -43,14 +44,14 @@ Please use my e-mail to contact me on how to contribute to this project.
 
 ## Tests
 
-You can find examples here
+t
 
 ## Questions
 
 https://github.com/s-suresh-kumar
 
 
-suresh.uncbc.coding@gmail.com
+suresh01@yahoo.com
 
 
 

@@ -90,7 +90,27 @@ function init() {
     // const instructionExample = userResponse.instructionExample;
 
     const licenseName = userResponse.license;
-
+    let licenseLogo = "";
+    switch (licenseName) {
+      case "MIT":
+        licenseLogo = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) `;
+        break;
+      case "Apache 2.0":
+        licenseLogo = `[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
+        break;
+      case "BSD-3":
+        licenseLog = `[![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)`;
+        break;
+      case "GPLv3":
+        licenseLogo = `[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)`;
+        break;
+      case "ISC":
+        licenseLogo = `[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)`;
+        break;
+      default:
+        break;
+    }
+    console.log(licenseLogo);
     // const licenseUrl = userResponse.licenseUrl;
 
     const Contributing =
@@ -151,6 +171,7 @@ function init() {
                 }
             */
     var result = `
+${licenseLogo}
 
 # ${projectTitle} 
 
