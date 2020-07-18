@@ -1,7 +1,7 @@
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
+[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
 
-# t 
+# Readme Generator App 
 
 
 
@@ -24,19 +24,19 @@
 
 ## Description
 
-t
+This app helps the user to auto generate a professional looking README.md. It interactively asks the user pertinent questions about the app, such as title, description, installation instructions, usage instructions, license information, how to contribute and collaborate to make the app a better product and collects user e-mail and github username so that any questions can be sent to the author ( user).
 
 ## Installation
 
-t
+You need inquirer package installed for this app to run. So the steps are :
 
 ## Instructions
 
-t
+Since this is a command line app, just run 'node index.js'. The app will ask series of questions, once you answer all of them the app will automatically generate a professional looking README.md.  The README.md can only be as good as the answers. So spend time to provide proper and well thought out answers to the interactive questions of the app
 
 ## License 
 
-This project is licensed under the [ MIT](https://opensource.org/licenses/MIT) License. 
+This project is licensed under the [ISC](https://opensource.org/licenses/ISC) License.  
 
 ## Contribute
 
@@ -44,7 +44,7 @@ Please use my e-mail to contact me on how to contribute to this project.
 
 ## Tests
 
-t
+There are no automated tests written for this app. However it is easy to launch the app and answer the questions, at the end README.md will get generated.
 
 ## Questions
 
