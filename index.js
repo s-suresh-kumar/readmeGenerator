@@ -94,6 +94,7 @@ function init() {
     switch (licenseName) {
       case "MIT":
         licenseLogo = `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) `;
+        licenseText = `![License: MIT](https://opensource.org/licenses/MIT) `;
         break;
       case "Apache 2.0":
         licenseLogo = `[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
@@ -201,7 +202,7 @@ ${instruction}
 
 ## License 
 
-This project is licensed under the ${licenseName} 
+This project is licensed under the ${licenseText} 
 
 ## Contribute
 

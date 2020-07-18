@@ -24,19 +24,19 @@
 
 ## Description
 
-d
+t
 
 ## Installation
 
-r
+t
 
 ## Instructions
 
-u
+t
 
 ## License 
 
-This project is licensed under the MIT 
+This project is licensed under the ![License: MIT](https://opensource.org/licenses/MIT)  
 
 ## Contribute
 
