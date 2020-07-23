@@ -1,26 +1,20 @@
-
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
 
-# Readme Generator App 
+# Readme Generator App
 
+- [Description](#Description)
 
+- [Installation](#Installation)
 
+- [Instructions](#Instructions)
 
+- [License](#License)
 
+- [Contribute](#Contribute)
 
-* [Description](#Description)
+- [Tests](#Tests)
 
-* [Installation](#Installation)
-
-* [Instructions](#Instructions)
-
-* [License](#License)
-
-* [Contribute](#Contribute)
-
-* [Tests](#Tests)
-
-* [Questions](#Questions)
+- [Questions](#Questions)
 
 ## Description
 
@@ -30,13 +24,18 @@ This app helps the user to auto generate a professional looking README.md. It in
 
 You need inquirer package installed for this app to run. So the steps are :
 
+1. Clone this [repository](https://github.com/s-suresh-kumar/readmeGenerator)
+2. Issue `npm i` at your local repository root, so that all dependencies (inquirer package) is installed.
+3. Then launch node index.js and answer all questions properly.
+4. Your README.md will get auto-generated.
+
 ## Instructions
 
-Since this is a command line app, just run 'node index.js'. The app will ask series of questions, once you answer all of them the app will automatically generate a professional looking README.md.  The README.md can only be as good as the answers. So spend time to provide proper and well thought out answers to the interactive questions of the app
+Since this is a command line app, just run 'node index.js'. The app will ask series of questions, once you answer all of them the app will automatically generate a professional looking README.md. The README.md can only be as good as the answers. So spend time to provide proper and well thought out answers to the interactive questions of the app
 
-## License 
+## License
 
-This project is licensed under the [ISC](https://opensource.org/licenses/ISC) License.  
+This project is licensed under the [ISC](https://opensource.org/licenses/ISC) License.
 
 ## Contribute
 
@@ -50,8 +49,4 @@ There are no automated tests written for this app. However it is easy to launch 
 
 https://github.com/s-suresh-kumar
 
-
 suresh01@yahoo.com
-
-
-
