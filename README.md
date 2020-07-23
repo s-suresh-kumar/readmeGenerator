@@ -6,6 +6,8 @@
 
 [ReadmeGenerator walkthru video](https://drive.google.com/file/d/1mKtnC8vVHAh-ZIaSLxFY4drZU2qetV-o/view)
 
+## Table of Contents
+
 - [Description](#Description)
 
 - [Installation](#Installation)
