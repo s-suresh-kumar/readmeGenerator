@@ -2,6 +2,8 @@
 
 # Readme Generator App
 
+[![Thumbnail](assets/images/readMeGenerator-thumb)](https://s-suresh-kumar.github.io/readmeGenerator/)
+
 [ReadmeGenerator walkthru video](https://drive.google.com/file/d/1mKtnC8vVHAh-ZIaSLxFY4drZU2qetV-o/view)
 
 - [Description](#Description)
