@@ -46,11 +46,6 @@ const questions = [
     name: "tests",
   },
 
-  // {
-  //     type: "input",
-  //     message: "Questions?",
-  //     name: "questions"
-  // },
   {
     type: "input",
     message: "What is your GitHub user name?",
@@ -118,7 +113,6 @@ function init() {
         break;
     }
     console.log(licenseLogo);
-    // const licenseUrl = userResponse.licenseUrl;
 
     const Contributing =
       "Please use my e-mail to contact me on how to contribute to this project.";
@@ -129,54 +123,6 @@ function init() {
 
     const email = userResponse.email;
 
-    // // fetching data from git
-
-    // user
-    /*
-                        const gitResponse = await axios.get(`https://api.github.com/users/${gitUsername}`);
-
-                        const gitData = gitResponse.data;
-
-                        const gitName = gitData.login;
-
-                        const gitEmail = gitData.email;
-
-                        const gitlocation = gitData.location;
-
-                        const gitUrl = gitData.html_url;
-
-                        const gitProfileImage = gitData.avatar_url;
-            */
-    // contributor
-    /*
-                const contributorUserNamesArray = contributorUserNames.split(",");
-
-                console.log(contributorUserNamesArray);
-
-                // const  = listOfContributorsUserNames.
-
-                // contributorsGitUserName
-
-                var resultContributor;
-
-                for (i = 0; i < contributorUserNamesArray.length; i++) {
-
-                    var contributorsGitUserName = contributorUserNamesArray[i]
-
-                    const gitResponse2 = await axios.get(`https://api.github.com/users/${contributorsGitUserName}`);
-
-                    var gitContribuProfileImage = gitResponse2.data.avatar_url;
-
-                    var gitContribuUrl = gitResponse2.data.html_url;
-
-                    var gitContribuEmail = gitResponse2.data.email;
-
-                    var resultContributor = resultContributor + (`
-
-                        \n <img src="${gitContribuProfileImage}" alt="drawing" width="150" display="inline"/> ${contributorsGitUserName}  GitHubLink: ${gitContribuUrl}`);
-
-                }
-            */
     var result = `
 ${licenseLogo}
 
