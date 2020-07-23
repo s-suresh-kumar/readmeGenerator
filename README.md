@@ -2,6 +2,8 @@
 
 # Readme Generator App
 
+[ReadmeGenerator walkthru video](https://drive.google.com/file/d/1mKtnC8vVHAh-ZIaSLxFY4drZU2qetV-o/view)
+
 - [Description](#Description)
 
 - [Installation](#Installation)
