@@ -2,7 +2,7 @@
 
 # Readme Generator App
 
-[![Thumbnail](assets/images/readMeGenerator-thumb.jpg)](https://github.com/s-suresh-kumar/readmeGenerator)
+[![Thumbnail](assets/images/readMeGenerator-thumb.JPG)](https://github.com/s-suresh-kumar/readmeGenerator)
 
 [ReadmeGenerator walkthru video](https://drive.google.com/file/d/1mKtnC8vVHAh-ZIaSLxFY4drZU2qetV-o/view)
 
