@@ -6,6 +6,8 @@
 
 [ReadmeGenerator walkthru video](https://drive.google.com/file/d/1mKtnC8vVHAh-ZIaSLxFY4drZU2qetV-o/view)
 
+[![App in action](assets/images/suresh-readme-generator-app-FGAY.GIF)]
+
 ## Table of Contents
 
 - [Description](#Description)
