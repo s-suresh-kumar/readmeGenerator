@@ -11,6 +11,9 @@
 
 #### Sample Output
 [Sample Output of this app](https://drive.google.com/file/d/1dA-DnY7g7QjfD985UKDvM141hVTylYkB/view)
+
+Note: I have used this app itself for sample output purposes.
+
 ## Table of Contents
 
 - [Description](#Description)
